@@ -15,11 +15,7 @@ angular.module('myModule', [
 
 
 angular.module('myModule',[])
-    .directive('testTag', [function(){
-        return {
-            template: '<p> le directive haz loaded!</p>'
-        };
-    }]);
+    .directive('testTag', require('app/test-tag'));
     
 
 angular.bootstrap(document, ['myModule'], {
