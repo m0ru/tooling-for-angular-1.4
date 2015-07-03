@@ -37,7 +37,6 @@ then serve via a http server (your browser will block direct file-access if you'
 
 ``` bash
 npm install nws
-./node_modules/jspm/jspm.js install
 ./node_modules/nws/bin/nws -p 8000
 ``` 
 
