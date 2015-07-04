@@ -1,14 +1,10 @@
 console.log("app.js");
 
-var angular = require('angular');
+import angular from 'angular';
 
-//import testTag from './test-tag';
-//console.log(testTag);
-
-class Foo {
-    bar() { return 2 }
-}
-var f = new Foo();
+import testTag from './test-tag';
+angular.module('myModule',[])
+     .directive('testTag', testTag);
 
 angular.bootstrap(document, ['myModule'], {
   // make sure dependency injection works after minification
