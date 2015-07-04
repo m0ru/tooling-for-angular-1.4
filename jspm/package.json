@@ -8,9 +8,14 @@
   },
   "author": "",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-jss": "0.0.7"
+  },
   "devDependencies": {
-    "jspm": "^0.15.7"
+    "jspm": "^0.15.7",
+    "jss": "^2.0.0"
   },
   "jspm": {
     "directories": {},

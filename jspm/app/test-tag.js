@@ -6,3 +6,9 @@ function testTag($log){
 }
 testTag.$inject = ['$log'];
 export default testTag;
+export styles = {
+    'test-tag' : {
+        'background': 'gray';
+    }
+
+}
