@@ -1,27 +1,14 @@
 console.log("app.js");
 
 var angular = require('angular');
-//console.log(angular);
 
+//import testTag from './test-tag';
+//console.log(testTag);
 
-/*
-angular.module('myModule', [
-  require('angular-animate'),
-  require('angular-mocks/ngMock'),
-  require('angular-mocks/ngAnimateMock'),
-  require('angular-i18n/en-us')
-]);
-*/
-
-
-import testTag from './test-tag';
-console.log(testTag);
-
-/*
-angular.module('myModule',[])
-    .directive('testTag', require('app/test-tag'));
-    */
-
+class Foo {
+    bar() { return 2 }
+}
+var f = new Foo();
 
 angular.bootstrap(document, ['myModule'], {
   // make sure dependency injection works after minification
