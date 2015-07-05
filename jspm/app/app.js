@@ -2,9 +2,10 @@ console.log("app.js");
 
 import angular from 'angular';
 
-import testTag from './test-tag';
+//import * as testTag from './test-tag';
+import * as testTag from './test-tag';
 angular.module('myModule',[])
-     .directive('testTag', testTag);
+     .directive('testTag', testTag.factoryFun);
 
 angular.bootstrap(document, ['myModule'], {
   // make sure dependency injection works after minification
