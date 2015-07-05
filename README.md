@@ -59,11 +59,6 @@ $ du -sh gulp-browserify-scss/build/ webpack/build/ jspm/build.js
 440K    jspm/build.js
 ```
 
-@peacememories meant that webpack needs a plugin for tree-shaking. I should check that out.
+@peacememories meant that webpack needs a plugin for tree-shaking. I should check that out. And minification / uglification. #TODO
 
 Otherwise I'd say we have a clear winner.
-
-## TODOs
-
-* all CSS pipelines
-* all Minification
