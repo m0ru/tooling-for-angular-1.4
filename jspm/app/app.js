@@ -1,5 +1,3 @@
-console.log("app.js");
-
 import angular from 'angular';
 
 //import * as testTag from './test-tag';
@@ -21,16 +19,13 @@ angular.bootstrap(document, ['myModule'], {
 // a preprocessor like: https://www.npmjs.com/package/gulp-jss
 
 /*
+//TODO atm jss is included in index.html instead of via require
 import jss from 'jss';
 window.jss = jss;
 */
 
-var testTagStyle = {
-  'test-tag': {'color': 'gray'}
-}
-
 // the `true` deactivates autogenerating classnames
-var sheet = jss.createStyleSheet(testTagStyle, true).attach();
+var sheet = jss.createStyleSheet(testTag.styles, true).attach();
 /*
 // add it as <style>-tag:
 window.document.body.appendChild(sheet.element);

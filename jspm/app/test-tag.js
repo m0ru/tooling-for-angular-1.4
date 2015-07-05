@@ -6,18 +6,8 @@ export function factoryFun($log){
 }
 factoryFun.$inject = ['$log'];
 
-//var styles = {}
-//export styles;
-
-/*
-var styles = {
+export const styles = {
     'test-tag' : {
-        'background': 'gray';
+        'background': 'gray'
     }
-};*/
-//export factoryFun as factoryFun
-/*
-export default {
-    factoryFun
 };
-*/
