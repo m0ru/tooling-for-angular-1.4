@@ -15,6 +15,6 @@ gulp.task('browserify', function() {
           debug : !gulp.env.production
         }))
         .pipe(dedupe()) // Remove duplicates from previous tasks (if any).
-        //.pipe(uglify())
+        .pipe(uglify())
         .pipe(gulp.dest('./build'))
 });
